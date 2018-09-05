@@ -1,0 +1,190 @@
+.component {
+    width: 400px;
+    height: 259px;
+    border: 1px solid #545b66;
+    margin: 0 auto;
+}
+
+/* Component head */
+
+.component__head {
+    border-bottom: 1px solid #545b66;
+    padding: 10px;
+}
+
+.component__head span {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color: #545b66;
+}
+
+.component__head i {
+    float: right;
+    color: #545b66;
+}
+
+/* End Component head */
+
+/* Component body */
+
+.component__body {
+    padding: 10px;
+}
+
+/*the container must be positioned relative:*/
+.custom-select {
+    position: relative;
+    font-family: Arial;
+  }
+  .custom-select select {
+    display: none; /*hide original SELECT element:*/
+  }
+  .select-selected {
+    /* background-color: DodgerBlue; */
+    border: 1px solid #5555;
+  }
+  /*style the arrow inside the select element:*/
+  .select-selected:after {
+    position: absolute;
+    content: '\f078';
+    color: #545b66;
+    top: 4px;
+    right: 20px;
+    width: 0;
+    height: 0;
+    border: 6px solid transparent;
+    border-color: #fff transparent transparent transparent;
+    
+    font-family: FontAwesome;
+  }
+  /*point the arrow upwards when the select box is open (active):*/
+  .select-selected.select-arrow-active:after {
+    /* border-color: transparent transparent #fff transparent; */
+    /* top: 7px; */
+    position: absolute;
+    content: '\f077';
+    color: #545b66;
+    top: 4px;
+    right: 20px;
+    width: 0;
+    height: 0;
+    border: 6px solid transparent;
+    border-color: #fff transparent transparent transparent;
+  }
+  /*style the items (options), including the selected item:*/
+  
+  .select-items div,.select-selected {
+    color: #545b66;
+    font-size: 15px;
+    padding: 8px 16px;
+    cursor: pointer;
+    user-select: none;
+  }
+  /*style items (options):*/
+  .select-items {
+    position: absolute;
+    background-color: #ffffff;
+    border-left: 1px solid #5555;
+    border-right: 1px solid #5555;
+    border-bottom: 1px solid #5555;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 99;
+  }
+  /*hide the items when the select box is closed:*/
+  .select-hide {
+    display: none;
+  }
+  .select-items div:hover, .same-as-selected {
+    background-color: #4c535c;
+    color: #fff !important;
+  }
+.same-as-selected::after  {
+  position: absolute;
+    content: '\f00c';
+    color: #fff;
+    font-family: FontAwesome;
+    right: 10px;
+  }
+
+.datepicker-here {
+  width: 164px;
+    padding: 10px;
+}
+
+.input__data {
+  position: relative;
+  margin-top: 10px;
+}
+
+.input__data .start {
+  position: absolute;
+  left: 163px;
+    top: 13px;
+    font-size: 12px;
+    color: #545b66;
+}
+
+.input__data .end {
+  position: absolute;
+    right: 15px;
+    top: 13px;
+    font-size: 12px;
+    color: #545b66;
+}
+
+.heading__input--data {
+  margin-top: 10px;
+}
+
+.heading__input--data label {
+  width: 188px;
+  display: inline-block;
+  color: #545b66;
+  font-size: 14px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+input:focus {
+  border-color: #545b66;
+  outline: none;
+}
+
+.component__buttons {
+  margin-top: 10px;
+  text-align: right;
+}
+
+#cancel-btn {
+  width: 90px;
+  color: #5555;
+  border: 1px solid #545b66;
+  padding: 8px;
+  font-size: 14px;
+  text-transform: uppercase;
+  border-radius: 2px;
+  
+}
+
+#apply-btn {
+  width: 90px;
+  border: 1px solid red;
+  padding: 8px;
+  font-size: 14px;
+  background: red;
+  text-transform: uppercase;
+  color: #fff;
+  border-radius: 2px;
+}
+
+#cancel-btn,
+#apply-btn:focus {
+  outline: none;
+}
+
+#cancel-btn,
+#apply-btn:hover {
+  cursor: pointer;
+}
+/* End Component body */
